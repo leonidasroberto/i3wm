@@ -238,7 +238,7 @@ bar {
 font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 
 exec_always --no-startup-id xfce4-power-manager &
-exec_always --no-startup-id ~/.config/i3/scripts/trop &
+exec_always --no-startup-id ~/.config/i3/scripts/starter.sh &
 #exec --no-startup-id <script_of_resolution> &
 #exec --no-startup-id nitrogen --restore &
 
