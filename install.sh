@@ -9,20 +9,13 @@ sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter imagemagick ttf-font-awesome \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
-    ranger w3m fish
+    ranger w3m fish compton rofi
     mkdir ~/.config/ranger
     echo "set preview_images true" > ~/.config/ranger/rc.conf
 if [[ $? != 0 ]];then
     echo "ERRO DURANTE INSTALAÇÃO DE Dependencias"
     exit
 fi
-cp -v ./picom.conf $HOME/.config/
-
-fc-cache -fv
-
-cp -v ./.i3blocks.conf $HOME/
-cp -rv ./i3 $HOME/.config/
-sudo cp -rv ./rofi-themes/* /usr/share/rofi/themes/
 ;;
 
 "ubuntu")
@@ -47,6 +40,7 @@ sudo apt install i3-gaps -y
 echo "Opção inválida!"
 exit;;
 esac
+cp -v ./picom.conf $HOME/.config/
 
 fc-cache -fv
 
