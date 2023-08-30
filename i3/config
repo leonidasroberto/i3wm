@@ -174,7 +174,7 @@ bindsym $mod+n workspace prev_on_output
 # ATALHOS
 bindsym $mod+g exec --no-startup-id google-chrome
 bindsym $mod+Shift+g exec --no-startup-id google-chrome --incognito
-bindsym $mod+p exec ~/.config/i3/scripts/power1
+bindsym $mod+p exec ~/.config/i3/scripts/power1.sh
 #bindsym $mod+Shift+q exec i3lock -c "#000000" -i ~/Pictures/wall.png
 #bindsym $mod+Shift+q exec dm-tool lock
 #bindsym $mod+Shift+q exec dm-tool switch-to-greeter
