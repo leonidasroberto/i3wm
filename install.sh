@@ -49,6 +49,7 @@ cp -rv ./i3 $HOME/.config/
 sudo cp -rv ./rofi-themes/* /usr/share/rofi/themes/
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+i3-msg reload > /dev/null
 
 ## ICONES para i3blocks -> https://fontawesome.com/v5/cheatsheet
 ## Alternativas para notificação pesquisar -> notification-daemon
