@@ -9,7 +9,7 @@ sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter imagemagick ttf-font-awesome \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
-    ranger w3m fish compton rofi
+    ranger w3m fish rofi picom
     mkdir ~/.config/ranger
     echo "set preview_images true" > ~/.config/ranger/rc.conf
 if [[ $? != 0 ]];then
