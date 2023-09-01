@@ -10,8 +10,6 @@ sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks \
     lightdm lightdm-webkit2-greeter imagemagick ttf-font-awesome \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
     ranger w3m fish rofi picom
-    mkdir ~/.config/ranger
-    echo "set preview_images true" > ~/.config/ranger/rc.conf
 if [[ $? != 0 ]];then
     echo "ERRO DURANTE INSTALAÇÃO DE Dependencias"
     exit
@@ -31,6 +29,9 @@ if [[ $? != 0 ]];then
     echo "ERRO DURANTE INSTALAÇÃO DE Dependencias"
     exit
 fi
+
+mkdir ~/.config/ranger
+echo "set preview_images true" > ~/.config/ranger/rc.conf
 
 cp -v ./compton.conf $HOME/.config/
 yes | sudo add-apt-repository ppa:regolith-linux/release
