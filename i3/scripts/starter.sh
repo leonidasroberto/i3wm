@@ -1,11 +1,11 @@
 #!/bin/bash
 
-ps -C compton
+ps -C picom
 
 if [ $? == 0 ];then
-echo "Compton em execução" > $HOME/.config/i3/scripts/scripts.log
+echo "Picom em execução" > $HOME/.config/i3/scripts/scripts.log
 else
-compton &
+picom &
 fi
 
 ps -C volumeicon
