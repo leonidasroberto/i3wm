@@ -217,7 +217,7 @@ bar {
 	#font pango:DejaVu Sans Mono 10
 	#font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 	font pango:FontAwesome
-	tray_output VGA-0
+	#tray_output VGA-0
 	status_command i3blocks
 	position top
 
