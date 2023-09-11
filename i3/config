@@ -245,8 +245,8 @@ exec_always --no-startup-id ~/.config/i3/scripts/starter.sh &
 exec_always --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 ## ARCH
-#exec_always --no-startup-id killall -q xlqt-policykit-agent
-#exec_always --no-startup-id xlqt-policykit-agent &
+#exec_always --no-startup-id killall -q lxqt-policykit-agent
+#exec_always --no-startup-id lxqt-policykit-agent &
 ## OU
-#exec --no-startup-id xlqt-policykit-agent &
+#exec --no-startup-id lxqt-policykit-agent &
 
