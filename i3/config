@@ -186,6 +186,7 @@ bindsym $mod+Control+l move workspace to output up
 bindsym $mod+Control+k move workspace to output down
 bindsym $mod+Control+n exec --no-startup-id ~/.config/i3/scripts/i3-new-workspace.sh 
 bindsym $mod+Control+m exec --no-startup-id ~/.config/i3/scripts/move-container-new.sh
+bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/theme-select-menu.sh
 bindsym $mod+Shift+m move container to workspace next_on_output;workspace next_on_output
 bindsym $mod+Shift+n move container to workspace prev_on_output;workspace prev_on_output
 
