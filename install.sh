@@ -11,11 +11,23 @@ sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
     ranger w3m fish rofi picom
 if [[ $? != 0 ]];then
-    echo "ERRO DURANTE INSTALAÇÃO DE Dependencias"
+    echo "ERROR ON INSTALL: ARCHLINUX VERSION"
     exit
 fi
 ;;
-
+"void")
+sudo xbps-install -Syu
+sudo xbps-install sysstat xfce4-terminal i3blocks \
+    lxappearance nitrogen lxqt-policykit xfce4-power-manager \
+    lightdm lightdm-webkit2-greeter \
+    xdotool volumeicon notify-osd pavucontrol which \
+    ranger w3m fish rofi picom font-awesome noto-fonts-emoji
+    #i3lock xautolock
+if [[ $? != 0 ]];then
+    echo "ERROR ON INSTALL: VOIDLINUX VERSION"
+    exit
+fi
+;;
 "ubuntu")
 sudo apt update
 sudo apt install -y i3 i3blocks arandr \
@@ -26,7 +38,7 @@ sudo apt install -y i3 i3blocks arandr \
     fonts-font-awesome xdotool notify-osd ranger fish
     #i3lock xautolock
 if [[ $? != 0 ]];then
-    echo "ERRO DURANTE INSTALAÇÃO DE Dependencias"
+    echo "ERROR ON INSTALL: UBUNTU VERSION"
     exit
 fi
 
