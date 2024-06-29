@@ -19,7 +19,7 @@ fi
 sudo xbps-install -Syu
 sudo xbps-install sysstat xfce4-terminal i3blocks \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
-    lightdm lightdm-webkit2-greeter \
+    lightdm lightdm-webkit2-greeter psmisc dmenu \
     xdotool volumeicon notify-osd pavucontrol which \
     ranger w3m fish-shell rofi picom font-awesome noto-fonts-emoji
     #i3lock xautolock
@@ -62,7 +62,7 @@ cp -rv ./i3 $HOME/.config/
 sudo cp -rv ./rofi-themes/* /usr/share/rofi/themes/
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-i3-msg reload > /dev/null
+sudo i3-msg reload > /dev/null
 
 ## ICONES para i3blocks -> https://fontawesome.com/v5/cheatsheet
 ## Alternativas para notificação pesquisar -> notification-daemon
