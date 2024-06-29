@@ -21,7 +21,7 @@ sudo xbps-install sysstat xfce4-terminal i3blocks \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter \
     xdotool volumeicon notify-osd pavucontrol which \
-    ranger w3m fish rofi picom font-awesome noto-fonts-emoji
+    ranger w3m fish-shell rofi picom font-awesome noto-fonts-emoji
     #i3lock xautolock
 if [[ $? != 0 ]];then
     echo "ERROR ON INSTALL: VOIDLINUX VERSION"
