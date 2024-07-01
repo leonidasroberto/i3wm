@@ -5,7 +5,7 @@ echo "Instalando dependencias!"
 case $1 in 
 "arch")
 sudo pacman -Syy
-sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks \
+sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks curl \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter imagemagick ttf-font-awesome \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
@@ -17,7 +17,7 @@ fi
 ;;
 "void")
 sudo xbps-install -Syu
-sudo xbps-install sysstat xfce4-terminal i3blocks \
+sudo xbps-install sysstat xfce4-terminal i3blocks curl \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter psmisc dmenu \
     xdotool volumeicon notify-osd pavucontrol which \
