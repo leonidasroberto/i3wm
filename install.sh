@@ -6,7 +6,7 @@ case $1 in
 "arch")
 sudo pacman -Syy
 sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks curl \
-    lxappearance nitrogen lxqt-policykit xfce4-power-manager \
+    lxappearance lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter imagemagick ttf-font-awesome \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
     ranger w3m fish rofi picom
@@ -60,9 +60,9 @@ fc-cache -fv
 cp -v ./.i3blocks.conf $HOME/
 cp -rv ./i3 $HOME/.config/
 sudo cp -rv ./rofi-themes/* /usr/share/rofi/themes/
+sudo i3-msg reload > /dev/null
 
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-sudo i3-msg reload > /dev/null
 
 ## ICONES para i3blocks -> https://fontawesome.com/v5/cheatsheet
 ## Alternativas para notificação pesquisar -> notification-daemon
