@@ -14,3 +14,5 @@ git clone https://github.com/leonidasroberto/i3wm;cd i3wm;./install.sh void
 ```bash
 git clone https://github.com/leonidasroberto/i3wm;cd i3wm;./install.sh ubuntu
 ```
+## Icones
+[Font Awesome](https://fontawesome.com/v4/cheatsheet/)
