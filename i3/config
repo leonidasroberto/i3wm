@@ -179,6 +179,10 @@ bindsym $mod+p exec ~/.config/i3/scripts/power1.sh
 #bindsym $mod+Shift+q exec dm-tool lock
 #bindsym $mod+Shift+q exec dm-tool switch-to-greeter
 
+# SCREENSHOT
+bindsym Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
+bindsym ctrl+Print exec --no-startup-id maim -s ~/Imagens/Screenshots/$(date +%Y%m%d-%H%M%S).png
+
 # MOV DE WORKSPACES
 bindsym $mod+Control+ccedilla move workspace to output left
 bindsym $mod+Control+j move workspace to output right
