@@ -9,7 +9,7 @@ sudo pacman -S --noconfirm sysstat xfce4-terminal i3blocks curl \
     lxappearance lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter imagemagick ttf-font-awesome \
     awesome-terminal-fonts xdotool volumeicon notify-osd pavucontrol which \
-    ranger w3m fish rofi picom
+    ranger w3m fish rofi picom xorg-xrandr bc
 if [[ $? != 0 ]];then
     echo "ERROR ON INSTALL: ARCHLINUX VERSION"
     exit
@@ -21,7 +21,7 @@ sudo xbps-install sysstat xfce4-terminal i3blocks curl \
     lxappearance nitrogen lxqt-policykit xfce4-power-manager \
     lightdm lightdm-webkit2-greeter psmisc dmenu \
     xdotool volumeicon notify-osd pavucontrol which \
-    ranger w3m fish-shell rofi picom font-awesome noto-fonts-emoji
+    ranger w3m fish-shell rofi picom font-awesome noto-fonts-emoji xrandr bc
     #i3lock xautolock
 if [[ $? != 0 ]];then
     echo "ERROR ON INSTALL: VOIDLINUX VERSION"
@@ -35,7 +35,7 @@ sudo apt install -y i3 i3blocks arandr \
     network-manager-gnome policykit-1-gnome compton \
     compton-conf volumeicon-alsa rofi xfce4-power-manager \
     lightdm lightdm-webkit2-greeter imagemagick gnome-terminal sysstat \
-    fonts-font-awesome xdotool notify-osd ranger fish
+    fonts-font-awesome xdotool notify-osd ranger fish x11-xserver-utils bc
     #i3lock xautolock
 if [[ $? != 0 ]];then
     echo "ERROR ON INSTALL: UBUNTU VERSION"
