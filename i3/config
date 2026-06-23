@@ -179,6 +179,10 @@ bindsym $mod+p exec ~/.config/i3/scripts/power1.sh
 #bindsym $mod+Shift+q exec dm-tool lock
 #bindsym $mod+Shift+q exec dm-tool switch-to-greeter
 
+# BRILHO
+bindsym $mod+Mod1+Up exec --no-startup-id ~/.config/i3/scripts/brightness.sh up
+bindsym $mod+Mod1+Down exec --no-startup-id ~/.config/i3/scripts/brightness.sh down
+
 # MOV DE WORKSPACES
 bindsym $mod+Control+ccedilla move workspace to output left
 bindsym $mod+Control+j move workspace to output right
