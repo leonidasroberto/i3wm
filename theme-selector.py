@@ -70,6 +70,18 @@ themes = {
             	{"name":"color7", "value":"#293241"},
             	{"name":"color8", "value":"#293241"}
         	]},
+			{"name":"theme5", "scheme": [
+            	{"name":"background", "value":"#cdd6f4"},
+            	{"name":"foreground", "value":"#f5c2e7"},
+            	{"name":"color1", "value":"#f5c2e7"},
+            	{"name":"color2", "value":"#1e1e2e"},
+            	{"name":"color3", "value":"#6c7086"},
+            	{"name":"color4", "value":"#f38ba8"},
+            	{"name":"color5", "value":"#f5c2e7"},
+            	{"name":"color6", "value":"#cdd6f4"},
+            	{"name":"color7", "value":"#1e1e2e"},
+            	{"name":"color8", "value":"#45475a"}
+        	]},
 		]
     }
 
